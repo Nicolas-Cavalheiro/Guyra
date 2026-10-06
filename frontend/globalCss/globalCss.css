@@ -3,12 +3,12 @@ header{
     height: 15vh;
     border: none;
     box-shadow: 0 4px 6px -1px #6f6f6f;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     display:flex;
     position: absolute;
 }
-.textologin, a, p, h1 {
+.textologin, a, p, h1, h2, h3, h4, h5 {
     font-family:Arial, Helvetica, sans-serif;
 }
 a{
@@ -30,10 +30,4 @@ a, p{
 }
 header > img{
     height: 100%;
-    margin-left: 1%;
-}
-
-header > p{
-    margin: 13vw;
-    font-size: 19px;
 }
