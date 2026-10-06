@@ -1,0 +1,100 @@
+.homeslogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left   ;
+    min-height: 85vh;
+    width:100vw;
+    background-image: url("../../assets/galinhaEfilhotes.avif");
+    background-size: cover;
+    background-position: 25% 25%;
+    background-repeat: no-repeat;
+    transform: translateY(15vh);
+    color: white;
+}
+.homebutton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:#f3680A;
+    border-radius: 50px;
+    height:10vh;
+    width: 30vw;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}
+.gradient{
+    margin-left: 50vw;
+    background-image: linear-gradient(to left, rgba(0,0,0,1) 90%, rgba(0,0,0,0.75) 91%, rgba(0,0,0,0.50) 92%, rgba(0,0,0,0.25) 93%, transparent);
+    height: 85vh;
+    width: 50vw;
+}
+.gradient > h1, p{
+    margin: 10px;
+    margin-left: 6.5vw;
+}
+.usage{
+    transform: translateY(40%);
+}
+
+.usage > h1{
+    text-align: center;
+    color: #883700;
+    font-size: 80px;
+}
+.usage > p{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+.companyValues{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.autonomy{
+    width: 20%;
+    height: 40%;
+    background-color: #f18c48;
+    color: #883700;
+    border: 1px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.care{
+    width: 20%;
+    height: 40%;
+    background-color: #BFECFE;
+    color: #136E98;
+    border: 1px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.safety{
+    width: 20%;
+    height: 40%;
+    background-color: #FFE238;
+    color: #8C6B00;
+    border: 1px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x:hidden;
+}

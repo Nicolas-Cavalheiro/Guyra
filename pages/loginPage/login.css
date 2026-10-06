@@ -1,0 +1,32 @@
+.loginscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(12vh);
+}
+.loginbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.botaocriar{
+    background-color: #f3680a;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    margin: 20px;
+}
+.logininput{
+    margin: 5px;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}

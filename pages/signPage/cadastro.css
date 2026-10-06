@@ -1,0 +1,42 @@
+.loginbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.divcadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #6f6f6f;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px #000000;
+    min-height: 98vh;
+    width: 30vw;
+    transform: translateY(1%);
+}
+.botaocriar{
+    background-color: #f3680a;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    margin: 20px;
+}
+.cadastro{
+    align-self: center;
+}
+.cadastrotexto {
+    width: 85%;
+    text-align: left;  
+    font-weight: 500;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,33 @@
+.mainbody{
+    margin: 0;
+    display:flex;
+    min-height: 100vh;
+}
+.sobrenos{
+    height: 100%;
+    width: 100%;
+    transform: translateY(15vh);
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url("../../assets/galinhas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.maior{
+    font-size: 75px;
+    margin-left: 2%;
+}
+.sobrenos > p{
+    margin: 0;
+    font-size: 60px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,1) 40%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.50) 60%, rgba(0,0,0,0.25) 70%, transparent);
+}
+.texto{
+    display: block;
+    margin-left: 2%;
+    margin-top: 2%;
+}
