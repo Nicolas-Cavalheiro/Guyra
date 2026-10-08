@@ -23,7 +23,7 @@ header{
     margin: 0;
 }
 .textos > h1{
-    font-size: 40px;
+    font-size: 350%;
 }
 .infos > h1, h2, h3{
     margin: 2px;
@@ -79,6 +79,7 @@ header{
 }
 .conclusion > h2{
     margin: 20px;
+    font-size: 30px;
 }
 
 .actions{
@@ -152,4 +153,75 @@ header{
 }
 #chkExaust:checked ~ .switchExaust .sliderExaust{
     transform: translateX(60px);
+}
+
+.graficos{
+    height: 70vh;
+    width: 60vw;
+    background-color: #00000040;
+    border: none;
+    border-radius: 20px;
+}
+.alertas{
+    margin-left: 3vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.divAlerta{
+    background-color: #00000040;
+    width: 33vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+}
+.fecharModal{
+    border: none;
+    background:none;
+    font-size: 20px;
+    outline: none;
+}
+.abrirModal{
+    border: none;
+    background: none;
+    color: #8f8f8f;
+    cursor: pointer;
+    text-decoration: underline;
+    outline: none;
+    transform: translateY(2vh);
+}
+dialog{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.desativarScroll{
+    overflow: hidden;
+}
+
+@keyframes scale-in{
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes scale-out{
+    0%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
 }

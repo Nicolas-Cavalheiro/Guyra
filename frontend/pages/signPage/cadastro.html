@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href = "cadastro.css">
-    <link rel = "stylesheet" href = "../../globalCss/globalCss.css">
+    <link rel = "stylesheet" href = "/pages/signPage/cadastro.css">
+    <link rel = "stylesheet" href = "/globalCss/globalCss.css">
 </head>
 <body class = "loginbody">
     <div class = "divcadastro">
-        <img src = "../../assets/guyramenor.png" class = "logo">
+        <img src = "/assets/guyramenor.png" class = "logo">
         <h1 class = "cadastro">Cadastre-se</h1>
+        <form id = "formCadastro">
         <p class = "cadastrotexto">Nome</p>
-        <input placeholder = "Seu nome" type = "text">
+        <input placeholder = "Seu nome" type = "text" id = "nome">
         <p class = "cadastrotexto">Telefone</p>
-        <input placeholder = "Seu nome" type = "tel">
+        <input placeholder = "Seu nome" type = "tel" id = "telefone">
         <p class = "cadastrotexto">Email</p>
-        <input placeholder = "Seu nome" type = "email">
+        <input placeholder = "Seu nome" type = "email" id = "email">
         <p class = "cadastrotexto">Senha</p>
-        <input placeholder = "Seu nome" type = "password">
-        <div class = "botaocriar">
+        <input placeholder = "Seu nome" type = "password" id = "senha">
+        <button class = "botaocriar" type = "submit">
             <h1>Criar conta</h1>
-        </div>
-        <a>Voltar ao login</a>
+        </button>
+        </form>
+        <a style = "cursor: pointer;">Voltar ao login</a>
     </div>
+    <script src = "/pages/signPage/cadastro.js"></script>
 </body>
 </html>

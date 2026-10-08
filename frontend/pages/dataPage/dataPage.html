@@ -6,6 +6,7 @@
     <title>Dados do viveiro</title>
     <link rel = "stylesheet" href = "dataPage.css">
     <link rel = "stylesheet" href = "../../globalCss/globalCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header>
@@ -13,6 +14,7 @@
         <p style = "color: #f3680A">Sobre nós</p>
         <p style = "color: #f3680A">Entrar</p>
         <p style = "color: #f3680A">Cadastrar-se</p>
+        <p style = "color: #f3680A">Seu perfil</p>
     </header>
     <div class = "infos">
         <div class = "textos">
@@ -20,29 +22,105 @@
         <h1>Como está<br>seu viveiro</h1>
         <h3>Veja aqui os dados coletados</h3>
         </div>
+
         <div class = "cardDados">
             <h2>Temperatura</h2>
             <h4>Média</h4>
             <h1>24°C</h1>
-            <h3>Toque para ver detalhes</h3>
+            <button class = "abrirModal" data-modal = "modalTemp"><h3>Toque para ver detalhes</h3></button>
+            <dialog id = "modalTemp">
+                <button class = "fecharModal" data-modal = "modalTemp">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1>Relatórios de Temperatura:</h1>
+                <div style = "display: flex;">
+                <div class = "graficos">
+                    <img>
+                </div>
+                <div class = "alertas">
+                    <h1>Ultimos <span style = "color: #be1e1e">Alertas</span></h1>
+                    <div class = "divAlerta">
+                        <h2>14/05/26: Altas temperaturas ~ 37°C</h2>
+                        <h3>A temperatura registrada é considerada risco para sua criação</h3>
+                    </div>
+                </div>
+                </div>
+            </dialog>
         </div>
+
         <div class = "cardDados">
             <h2>Umidade</h2>
             <h4>Média</h4>
             <h1>52%</h1>
-            <h3>Toque para ver mais detalhes</h3>
+            <button class = "abrirModal" data-modal = "modalUmid"><h3>Toque para ver detalhes</h3></button>
+            <dialog id = "modalUmid">
+                <button class = "fecharModal" data-modal = "modalUmid">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1>Relatórios de Umidade:</h1>
+                <div style = "display: flex;">
+                <div class = "graficos">
+                    <img>
+                </div>
+                <div class = "alertas">
+                    <h1>Ultimos <span style = "color: #be1e1e">Alertas</span></h1>
+                    <div class = "divAlerta">
+                        <h2>17/06/26: Baixa umidade ~ 30%</h2>
+                        <h3>A umidade registrada é considerada de risco para sua criação</h3>
+                    </div>
+                </div>
+                </div>
+            </dialog>
         </div>
+
         <div class = "cardDados">
             <h2>Gases</h2>
             <h4>Média</h4>
             <h1>98ppm</h1>
-            <h3>Toque para ver mais detalhes</h3>
+            <button class = "abrirModal" data-modal = "modalGases"><h3>Toque para ver detalhes</h3></button>
+            <dialog id = "modalGases">
+                <button class = "fecharModal" data-modal = "modalGases">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1>Relatórios de Gases:</h1>
+                <div style = "display: flex;">
+                <div class = "graficos">
+                    <img>
+                </div>
+                <div class = "alertas">
+                    <h1>Ultimos <span style = "color: #be1e1e">Alertas</span></h1>
+                    <div class = "divAlerta">
+                        <h2>15/03/26: Alta concentração de gases ~ 50ppm</h2>
+                        <h3>A concentração de gases registrada é considerada de risco para sua criação</h3>
+                    </div>
+                </div>
+                </div>
+            </dialog>
         </div>
+
         <div class = cardDados>
             <h2>Luminosidade</h2>
             <h4>Média</h4>
             <h1>321lx</h1>
-            <h3>Toque para ver mais detalhes</h3>
+            <button class = "abrirModal" data-modal = "modalLux"><h3>Toque para ver detalhes</h3></button>
+            <dialog id = "modalLux"> 
+                <button class = "fecharModal" data-modal = "modalLux">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1>Relatórios de Luminosidade:</h1>
+                <div style = "display: flex;">
+                <div class = "graficos">
+                    <img>
+                </div>
+                <div class = "alertas">
+                    <h1>Ultimos <span style = "color: #be1e1e">Alertas</span></h1>
+                    <div class = "divAlerta">
+                        <h2>19/07/26: Iluminação alta ~ 50lux</h2>
+                        <h3>A luminosidade registrada é considerada de risco para sua criação</h3>
+                    </div>
+                </div>
+                </div>
+            </dialog>
         </div>
         <div class = "conclusion">
             <h2><span style = "color: #883700">Conclusão</span></h2>
@@ -64,5 +142,6 @@
                 <span class = sliderExaust></span>
             </label>
     </div>
+    <script src = "dataPage.js"></script>
 </body>
 </html>
