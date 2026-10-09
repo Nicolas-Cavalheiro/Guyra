@@ -22,7 +22,10 @@ app.get("/guyra/cadastro", async (req, res) => {
 });
 app.get("/guyra/login", async(req,res) => {
     res.sendFile(path.join(__dirname, '..', '..', 'frontend', 'pages', 'loginPage', 'login.html'));
-})
+});
+app.get("/guyra", async(req,res)=>{
+    res.sendFile(path.join(__dirname, '..', '..', 'frontend', 'pages', 'homePage', 'home.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
